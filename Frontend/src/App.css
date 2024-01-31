@@ -1,0 +1,856 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/*Login page*/
+.login-page {
+  background-color: #f7f7f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.login-firstDiv{
+  background-color: #f7f7f7;
+}
+.form {
+  background-color: #ffffff;
+  width: 500px;
+  padding: 40px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.login-form input[type='text'], .login-form input[type='password'] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-form button {
+  width: 100%;
+  background-color: #4CAF50;
+  color: #ffffff;
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.login-form button:hover {
+  background-color: #3e8e41;
+}
+
+.login-form .message {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 12px;
+}
+
+.login-form .message a {
+  color: #4CAF50;
+}
+
+.login-form .message a:hover {
+  text-decoration: underline;
+}
+.other-way-to-signin{
+  font-weight: bold;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.google-Login{
+  margin-left: 100px;
+}
+
+/*Nav bar */
+.top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+  background-color: #fff;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
+}
+.app-name{
+  font-size: 20px;
+  font-weight: bold;
+  
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: black;
+}
+
+.nav-links a {
+  margin-right: 100px;
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-links a:hover a:visited a:link{
+  color: black;
+  text-decoration: none;
+}
+
+.login-signup {
+  display: flex;
+  align-items: center;
+}
+
+.login-signup a {
+  margin-left: 20px;
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  transition: color 0.3s ease-in-out;
+}
+
+.login-signup a:hover {
+  color: black;
+}
+.profileImage{
+  width: 30px;
+}
+@media all and (max-width: 1024px){
+  .top-bar {
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
+  }
+  .app-name{
+    font-size: 15px;
+    font-weight: bold;
+    padding-right: 10px;
+  }
+  
+  .nav-links {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+  }
+  
+  .nav-links a {
+    margin-right: 30px;
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 13px;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .nav-links a:hover a:visited a:link{
+    color: black;
+    text-decoration: none;
+  }
+  
+  .login-signup {
+    display: flex;
+    align-items: center;
+  }
+  
+  .login-signup a {
+    margin-left: 20px;
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 13px;
+    transition: color 0.3s ease-in-out;
+  }
+  .login-signup a:hover {
+    color: black;
+  }
+  .profileImage{
+    width: 30px;
+  }
+}
+
+/*Signup*/
+.signup-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.form input[type = 'text'], .form input[type = 'password']{
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  border: none;
+  background-color: #f7f7f7;
+  font-size: 16px;
+  color: #333;
+}
+.form input[type = 'email']{
+  width: 100%;
+  padding: 10px;
+  /* margin-bottom: 15px; */
+  border-radius: 4px;
+  border: none;
+  background-color: #f7f7f7;
+  font-size: 16px;
+  color: #333;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #4caf50;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #388e3c;
+}
+.input-email{
+  margin-bottom: 0;
+}
+.email-notice{
+  font-size:small;
+  color: red;
+  margin: 0;
+  padding-bottom: 10px;
+  padding-left: 5px;
+  text-align: left;
+}
+/*Main*/
+.image{
+  width: 100%;
+  height: 100vh;
+}
+/* Prof_nav */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 50px;
+  background-color:#61dafb;
+  color: #f8f9fa;
+  font-size: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+  color: black;
+  text-decoration: none;
+}
+
+.navbar-dropdown {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.navbar-label {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.navbar-select {
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  height: 38px;
+  background-color: #f5f5f5;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-search {
+  padding: 5px;
+  width:400px;
+  height: 38px;
+  margin-right: 15px;
+  border-radius: 5px;
+  margin-right: 10px;
+  background-color: #f5f5f5;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-button {
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #007bff;
+  border: none;
+  color: #f8f9fa;
+  cursor: pointer;
+  width: 100px;
+  height: 40px;
+  transition: background-color 0.3s;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-button:hover {
+  background-color: #0069d9;
+}
+
+.navbar-form {
+  display: flex;
+  align-items: center;
+}
+@media all and (max-width: 1024px){
+  .navbar {
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 50px;
+    background-color:#61dafb;
+    color: #f8f9fa;
+    font-size: 13px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .navbar-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-brand {
+    font-weight: bold;
+    font-size: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    color: black;
+    text-decoration: none;
+  }
+  
+  .navbar-dropdown {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+  }
+  
+  .navbar-label {
+    font-size: 20px;
+    margin-right: 1px;
+  }
+  
+  .navbar-select {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    height: 38px;
+    background-color: #f5f5f5;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  .navbar-search {
+    padding: 20px;
+    width: auto;
+    height: 38px;
+    margin-right: 15px;
+    border-radius: 5px;
+    margin-right: 10px;
+    background-color: #f5f5f5;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .navbar-button {
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #007bff;
+    border: none;
+    color: #f8f9fa;
+    cursor: pointer;
+    width: auto;
+    height: 40px;
+    transition: background-color 0.3s;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar-button:hover {
+    background-color: #0069d9;
+  }
+  
+  .navbar-form {
+    display: flex;
+    align-items: center;
+  }
+}
+/*Edit Profile*/
+.Edit_background{
+  background-color: whitesmoke;
+  height: 100vh;
+}
+.profile {
+  width: 500px;
+  margin: auto;
+  background-color: #ffffff;
+  padding: 30px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  margin-top: 200px;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-right: 20px;
+}
+
+input {
+  width: 400px;
+  padding: 10px;
+  border: none;
+  background-color: #f7f7f7;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+button[type='submit'] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type='submit']:hover {
+  background-color: #3e8e41;
+}
+/*Recent_review*/
+.Recent_background{
+  background-color: whitesmoke;
+  min-height: 100vh;
+}
+.Recent_Review{
+  font-size: 35px;
+  font-weight: bold;
+  padding-top: 30px;
+  padding-bottom: 15px;
+  padding-left: 20%;
+  text-align: left;
+  margin: auto;
+}
+.Recent_box{
+  position: relative;
+  background-color:lightyellow;
+  margin: auto;
+  border-radius: 10px;
+  width: 60%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+.Review1{
+  margin: auto;
+  border-bottom: solid;
+  border-color: #ccc;
+}
+.courseinfo{
+  position: relative;
+  text-align: left;
+  padding: 15px;
+  padding-bottom: 0;
+  font-size: 20px;
+}
+.Rate{
+  position: absolute;
+  float: left;
+  padding-left: 90px;
+  font-size: 50px;
+  font-weight: bold;
+}
+.comments{
+ position: relative;
+ text-align: left;
+ padding-left: 30px;
+ padding-top: 10px;
+ font-weight: bold;
+}
+.comments_text{
+  position: absolute;
+  text-align: left;
+  padding-left: 80px;
+}
+.comment_box{
+  position: relative;
+  background-color:white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  height: 100px;
+  border-radius: 30px;
+  margin-bottom: 10px;
+  margin-left: 180px;
+  margin-right: 20px;
+}
+@media all and (max-width: 768px){
+  .Recent_background{
+    background-color: whitesmoke;
+    min-height: 100vh;
+  }
+  .Recent_Review{
+    width: auto;
+    font-size: 35px;
+    font-weight: bold;
+    padding-top: 30px;
+    padding-bottom: 15px;
+    padding-left: 20%;
+    text-align: left;
+    margin: auto;
+  }
+  .Recent_box{
+    position: relative;
+    background-color:lightyellow;
+    margin: auto;
+    border-radius: 10px;
+    width: 70%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  }
+  .Review1{
+    margin: auto;
+    border-bottom: solid;
+    border-color: #ccc;
+  }
+  .courseinfo{
+    position: relative;
+    text-align: left;
+    padding: 15px;
+    padding-bottom: 0;
+    font-size: 20px;
+  }
+  .Rate{
+    position: absolute;
+    float: left;
+    padding-left: 90px;
+    font-size: 50px;
+    font-weight: bold;
+  }
+  .comments{
+   position: relative;
+   text-align: left;
+   padding-left: 30px;
+   padding-top: 10px;
+   font-weight: bold;
+   width: auto;
+  }
+  .comments_text{
+    position: absolute;
+    text-align: left;
+    padding-left: 80px;
+    width: auto;
+  }
+  .comment_box{
+    position: relative;
+    background-color:white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    height: 100px;
+    border-radius: 30px;
+    margin-bottom: 10px;
+    margin-left: 180px;
+    margin-right: 20px;
+  }
+}
+/*Prof review page*/
+.Rating_background{
+  background-color: lightcyan;
+  height: 130px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+}
+.Rating{
+  float: left;
+  position: relative;
+  width: 250px;
+  height: 100px;
+  border-radius: 10px;
+  margin-top: 15px;
+  margin-left: 100px;
+  background-color:#ffffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+}
+.comment_boxx{
+  position: relative;
+  background-color:white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  height: 100px;
+  border-radius: 30px;
+  margin-bottom: 10px;
+  margin-left: 180px;
+  margin-right: 20px;
+  padding-top: 35px;
+}
+.overall{
+ font-size: 40px;
+ font-weight: bold;
+ text-align: left;
+ padding-left: 30px;
+ margin: 0;
+}
+.prof_name{
+  text-align: right;
+  font-size: large;
+  font-weight: bold;
+  padding-right: 30px;
+  padding-bottom: 10px;
+  margin: 0;
+}
+.Rate_button{
+  width: 150px;
+  float: left;
+  margin-top: 18px;
+  margin-left: 10px;
+  
+}
+.rate_btn{
+  margin-top: 50px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+}
+.Prof_comments{
+  background-color: #f5f5f5;
+  min-height: 80vh;
+}
+.commentBox{
+  background-color: #64B5F6;
+  margin: auto;
+  border-radius: 20px;
+  width: 1300px;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.4);
+}
+.Revieww{
+  margin: auto;
+  border-bottom: solid;
+  border-color: #ccc;
+  width: 70%;
+  background-color: #64B5F6;
+  border-radius: 20px;
+}
+.comments_prof{
+  position: relative;
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+@media all and (max-width: 1024px){
+  .Rating_background{
+    background-color: lightcyan;
+    height: 130px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+    width: auto;
+  }
+  .Rating{
+    float: left;
+    position: relative;
+    width: 250px;
+    height: 100px;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-left: 100px;
+    background-color:#ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+  }
+  .comment_boxx{
+    width: auto;
+    position: relative;
+    background-color:white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    height: 100px;
+    border-radius: 30px;
+    margin-bottom: 10px;
+    margin-left: 180px;
+    margin-right: 20px;
+    padding-top: 35px;
+  }
+  .overall{
+   font-size: 40px;
+   font-weight: bold;
+   text-align: left;
+   padding-left: 30px;
+   margin: 0;
+  }
+  .prof_name{
+    text-align: right;
+    font-size: large;
+    font-weight: bold;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    margin: 0;
+  }
+  .Rate_button{
+    width: auto;
+    float: left;
+    margin-top: 18px;
+    margin-left: 10px;
+  }
+  .rate_btn{
+    margin-top: 50px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+  }
+  .Prof_comments{
+    background-color: #f5f5f5;
+    min-height: 80vh;
+    width: auto;
+  }
+  .commentBox{
+    background-color: #64B5F6;
+    margin: auto;
+    border-radius: 20px;
+    width: 1300px;
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.4);
+  }
+  .Revieww{
+    margin: auto;
+    border-bottom: solid;
+    border-color: #ccc;
+    width: 70%;
+    background-color: #64B5F6;
+    border-radius: 20px;
+  }
+  .comments_prof{
+    position: relative;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  }
+}
+/*Rate Prof page*/
+.upper-bar{
+  height: 80px;
+  background-color: #61dafb;
+  box-shadow: 0 2px 7px rgba(0, 0, 0.1, 0.8);
+  margin-bottom: 10px;
+}
+.professor-name{
+  font-size: 30px;
+  text-align: left;
+  padding-left: 100px;
+  padding-top: 15px;
+  font-weight: 300;
+}
+.select-course{
+  background-color: white;
+  width: 1100px;
+  height: 150px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  margin: auto;
+  border-radius: 10px;
+}
+.select-courseC{
+  background-color: white;
+  width: 1100px;
+  height: 200px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  margin: auto;
+  border-radius: 10px;
+}
+.select-courseP{
+  text-align: left;
+  padding-left: 200px;
+  font-size: 25px;
+  padding-top: 25px;
+}
+.selectDropbar{
+  display:inline-block;
+  margin-left: 200px;
+  font-size: 20px;
+  text-align: center;
+  width: 300px;
+  margin: 30px;
+  border-radius: 10px;
+}
+.rateComment{
+  font-size: 20px;
+  margin-left: 20px;
+  text-align: center;
+  width: 500px;
+  height: 100px;
+  border-radius: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+.rateSubmit{
+  width: 200px;
+}
+.deleteButton{
+  background-color: #64B5F6;
+}
+.deleteButton:hover {
+  background-color: #64B5F6;
+}
+/*CourseInput*/
+.checkbox{
+  width: 10px;
+  background-color: inherit;
+}
+.label{
+  display: inline-block;
+  width: 80px;
+}
+.label2{
+  width: 100px;
+}
+.dd{
+  display: inline-block;
+}
+.instructor{
+  margin: 10px;
+}
