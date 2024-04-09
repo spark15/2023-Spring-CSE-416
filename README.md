@@ -50,6 +50,9 @@ We have done deployed our website and backend server on Netlify and Heroku.
 [Data Design](https://drive.google.com/file/d/17gpN7mcXloeVRO526K8Oy0X8o_auQPCE/view?usp=drive_link)
 
 [Data View](https://docs.google.com/presentation/d/1Ae1Pbewg6hksKQCRFIsU3uga38PpUPSDuX2-v_dhObE/edit?usp=drive_link)
+
 [Beta Release](https://drive.google.com/file/d/1ghEZXKRy58Ep_9hGylqvMmyyaj8zLDa5/view?usp=drive_link)
+
 [Final Report](https://drive.google.com/file/d/1hu_Q3JDlIU15PTGCLdW9XHZFc0E446q2/view?usp=sharing)
+
 [Final Presentation](https://docs.google.com/presentation/d/1HZxVhfAMLIoyDj3aIMfCY54nGfZr4lp5l5HbdVBz0ac/edit?usp=sharing)
